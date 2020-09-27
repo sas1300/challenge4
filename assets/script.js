@@ -2,8 +2,7 @@
 
 var questions = [{
 
-
-  text: "What does HTML stand for?",
+    text: "What does HTML stand for?",
     answers: ["1. Hyper Text Miricle Language", "2. Hyper Text Markup Language", "3. Heading Type Markup Language", "4. Hyper Text Markdown Language"],
     correctAnswer: "2. Hyper Text Markup Language" 
 },
@@ -28,18 +27,17 @@ var questions = [{
      correctAnswer: "3. CSS"
 }]
 
-
-var buttonOne = document.querySelector("#buttonOne")
-var buttonTwo = document.querySelector("#buttonTwo")
-var buttonThree = document.querySelector("#buttonThree")
-var buttonFour = document.querySelector("#buttonFour")
-var buttonFour = document.querySelector("#buttonFive")
+// answerbuttons
+var answerOne = document.querySelector("#answerOne")
+var answerTwo = document.querySelector("#answerTwo")
+var answerThree = document.querySelector("#answerThree")
+var answerFour = document.querySelector("#answerFour")
 
 
 var position = 0
 score = 9
 
-
+//Make questions display
 document.querySelector("#startButton").addEventListener("click", function (event) {
     event.preventDefault();
     console.log(event.target)
@@ -49,21 +47,20 @@ document.querySelector("#startButton").addEventListener("click", function (event
     questionUpdate();
 })
 
-
+//Make questions change
 function questionUpdate() {
     document.querySelector("#questionText").innerHTML = questions[position].text;
-    document.querySelector("#buttonOne").innerText = questions[position].answers[0];
-    document.querySelector("#buttonTwo").innerText = questions[position].answers[1];
-    document.querySelector("#buttonThree").innerText = questions[position].answers[2];
-    document.querySelector("#buttonFour").innerText = questions[position].answers[3];
-    document.querySelector("#buttonFive").innerText = questions[position].answers[4];
+    document.querySelector("#answerOne").innerText = questions[position].answers[0];
+    document.querySelector("#answerTwo").innerText = questions[position].answers[1];
+    document.querySelector("#answerThree").innerText = questions[position].answers[2];
+    document.querySelector("#answerFour").innerText = questions[position].answers[3];
     
     position++
 }
 
-
-function makeAnswerButtonWork(button) {
-    button.addEventListener("click", function (event) {
+//Make button with correct answer work
+function makeAnswerButtonWork(answer) {
+    answer.addEventListener("click", function (event) {
         if (event.target.innerHTML == questions[position].correctAnswer) {
             score++
         }
@@ -71,21 +68,37 @@ function makeAnswerButtonWork(button) {
     })
 }
 
-makeAnswerButtonWork(buttonOne)
-makeAnswerButtonWork(buttonTwo)
-makeAnswerButtonWork(buttonThree)
-makeAnswerButtonWork(buttonFour)
-makeAnswerButtonWork(buttonFive)
+makeAnswerButtonWork(answerOne)
+makeAnswerButtonWork(answerTwo)
+makeAnswerButtonWork(answerThree)
+makeAnswerButtonWork(answerFour)
 
 
 
-//Button
+
+//questons
+    //right ansewr
+    //wrong answer
+    //alert
+    //
+//running score
 
 //timer
+fumction Timer() {
 
-//questions
+}
+
+    //Start timer
+
+    //End timer
 
 //answers
 
 //end game
+
+//user score
+
+//Name and high score
+
+//play again? or quit
 
