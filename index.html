@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,8 +11,12 @@
 </head>
 
 <body>
-    <div id="header">Welcome to the Coding Quiz Challenge!</div>
-    <button id="startButton">Start</button>
+    <div id="container"></div>
+        <div id="startPage"></div>
+        <h1>Welcome to the Coding Quiz Challenge!</h1>
+        <button id="startButton">Start Quiz</button>
+
+        <div id="timer">Time:</div> 
 
     <div id="questionBox" class="hide">
         <h3 id="questionText"></h3>
@@ -23,13 +28,15 @@
 
     <div id="results"></div>
 
+    
+
     <div id="highScores" class="hide">
         <table id="table">
             <tr>
                 <th>
                     Name
                 </th>
-                <th>Score</th>
+                <th>High Score</th>
             </tr>
         </table>
     </div>

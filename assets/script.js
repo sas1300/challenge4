@@ -1,5 +1,5 @@
 //Questions
-
+var timer
 var questions = [{
 
     text: "What does HTML stand for?",
@@ -37,12 +37,23 @@ var answerFour = document.querySelector("#answerFour")
 var position = 0
 score = 9
 
+//Start quiz
+
+//Start Timer
+
+/*timer = setInterval(tick, 1000);
+fumction tick() {
+    time--;
+    
+} */
+
 //Make questions display
 document.querySelector("#startButton").addEventListener("click", function (event) {
     event.preventDefault();
     console.log(event.target)
-    document.querySelector("#header").classList.add("hide")
+    document.querySelector("#container").classList.add("hide")
     //hide strartbutton
+    document.querySelector("#startButton").classList.add("hide")
     document.querySelector("#questionBox").classList.remove("hide")
     questionUpdate();
 })
@@ -81,12 +92,10 @@ makeAnswerButtonWork(answerFour)
     //wrong answer
     //alert
     //
-//running score
+
 
 //timer
-fumction Timer() {
 
-}
 
     //Start timer
 
