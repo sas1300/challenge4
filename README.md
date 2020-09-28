@@ -1,7 +1,7 @@
 ## Challenge 4:  *Coding Quiz Challenge* ##
 
 ## What ##
-* In the Coding Quiz Challenge we were give the task of creating a multiple choice, timed quiz that would cover a variety of JavaScript concepts. This project was to include the following:
+* In the Coding Quiz Challenge we were given the task of creating a multiple choice, timed quiz that would cover a variety of JavaScript concepts. This project was to include the following:
     * A start button
     * A timer
     * Questions and a selection of answers
@@ -35,9 +35,9 @@ https://github.com/sas1300/challenge4.git
 
 ## Screenshots of Project ##
 
-[Question One] (./assets/images/questionone.jpg)
+[Question One](./assets/images/questionone.jpg)
 
-[Question Three] (./assets/images/questionthree.jpg)
+[Question Three](./assets/images/questionthree.jpg)
 
 
 
