@@ -35,9 +35,9 @@ https://github.com/sas1300/challenge4.git
 
 ## Screenshots of Project ##
 
-![Question One](./assets/images/questionone.jpg)
+![Question One](./assets/Images/questionone.jpg)
 
-![Question Three](./assets/images/questionthree.jpg)
+![Question Three](./assets/Images/questionthree.jpg)
 
 
 
